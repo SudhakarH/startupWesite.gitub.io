@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webathon</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<style>
+
+
+	
+	.modal {
+	  display: none; 
+	  position: fixed; 
+	  z-index: 1;
+	  padding-top: 100px; 
+	  left: 0;
+	  top: 0;
+	  width: 100%; 
+	  height: 100%; 
+	  overflow: auto; 
+	  background-color: rgb(0,0,0); 
+	  background-color: rgba(0,0,0,0.4); 
+	}
+
+	
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 80%;
+	  height:50%;
+	}
+
+	
+	.close {
+	  color: #aaaaaa;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn {
+  background-color: #010a43;
+  color: white;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-left: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  
+  transform: scale(1.3);
+}
+
+</style>
+	</style>
+</head>
+<body>
+	
+	<header>
+		<div class="navi">
+		<ul>
+			<div class="top"><li><a href="#"><img src="logo.png" height="30px"></a> </li></div>
+			<div class="top"><li><a href="#">Home</a> </li></div>
+			
+			<div class="top"><li><a href="#about">About</a></li>
+			</div>
+			<div class="top"><li><a href="#map">Location</a> </li></div>
+			<div class="top"><li><a href="review.html">Reviews</a></li></div>
+			<div class="top"><li><a href="#cont">Contact Us</a> </li></div>
+			<div class="dropdown">
+			  <button class="dropbtn">Programs</button>
+			  <div class="dropdown-content">
+			  <a href="iot.html">IOT</a>
+			  <a href="ml.html">Machine Learning</a>
+			  <a href="robo.html">Robotics</a>
+			  </div>
+			</div>
+		</ul>
+	</div>
+	</header>
+	<div class="main">
+		<div class="banner">
+			<img src="banner.jpg" height="500" width="1427">
+			<h1>Welcome to Webtech!!</h1>
+			
+
+			
+			<button id="myBtn" class="inner">Our Moto</button>
+
+			
+			<div id="myModal" class="modal">
+
+			  
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+			    <p><center><h2>Your Journey towards the future begins here</h2></p></center>
+			    <br>
+			    <br>
+			    <hr>
+			    <p>
+					Technology and how we work today is changing so rapidly that it is difficult to find employees with experience in emerging technologies and work practices. This skill gap is threatening the sustainability of enterprises around the world. There is a strong need to revamp the education to employment and employment to talent creation through carefully designed curriculum, crafted to suite the future technology.
+
+					Our industry driven curriculum, robust career guidance services and capable community of Universities, Institutions, Instructors and Employers enable learners with skills for careers in the 21st century.</p>
+			  </div>
+
+			</div>
+
+		</div>
+		<div class="mission">
+			<div class="mymission">
+				<h2 style="font-size: 30px">Our Mission</h2>
+				<p>To promote academic conversations or dialogue that foster creativity and Integrate critical thinking skills within and across all content areas. Our aim is to provide students with repeated opportunities to practice higher order thinking and establish safe, Intellectually risk-free learning environments and resources</p>
+				<br>
+				<p>Decibels Lab consistently cultivate problem solving and logical thinking capabilities in students and develop communication & collaboration within by sharing ideas and working together.</p>
+			</div>
+			<div class="mission-pic">
+				<img src="mission.jpg" height="300" width="600">
+			</div>
+		</div>
+		
+		<br>
+		<div class="cent">
+			
+				<h2 style="font-size: 30px">Our Services</h2>
+				<p>We partner with Students, Universities, Institutions and Companies to create an effective ecosystem for resource creation 
+				and coming together around one common agenda of delivering skilled student outcomes.</p>
+
+				<div class="serv">
+				<ul>
+					<li><img src="stud.png"></li>
+					<li><b>STUDENTS</b></li>
+					<li>Bootcamps</li>
+					<li>Courses</li>
+					<li>Hackatons</li>
+					<li>Career Guidance</li>
+				</ul>
+			</div>
+			<div class="serv">
+				<ul>
+					<li><img src="uni.png"></li>
+					<li><b>UNIVERSITIES</b></li>
+					<li>New Lab Setup</li>
+					<li>Certification Courses</li>
+					<li>Faculty Development Programs</li>
+					<li>Placement Activities</li>
+				</ul>
+			</div>
+			<div class="serv">
+				<ul>
+					<li><img src="comp.png"></li>
+					<li><b>COMPANIES</b></li>
+					<li>Talent hunt</li>
+					<li>Upskill</li>
+					<li>Reskill</li>
+					<li>Co-Partnering</li>
+					
+				</ul>
+			</div>
+			
+
+
+			
+		</div>
+		
+		<br>
+		
+	</div>
+	<br><br>
+	<div class=prgms>
+		<center><h2 style="font-size: 30px">Our Programs</h2></center>
+		<div class="myprgms">
+			<img src="iot.jpg" height="150" width="250">
+			<h3>IOT</h3>
+			<p style="font-size: 12px">Internet of Things</p>
+			<br>
+			<hr style="width: 80%">
+			<a href="iot.html"><button class="prgms-btn">know more</button></a>
+			<hr style="width: 80%">
+		</div>
+		<div class="myprgms">
+			<img src="ml.jpg" height="150" width="250">
+			<h3>Machine Lerning</h3>
+			<p style="font-size: 12px">Congnitive Computing</p>
+			<br>
+			<hr style="width: 80%">
+			<a href="ml.html"><button class="prgms-btn">know more</button></a>
+			<hr style="width: 80%">
+		</div>
+		<div class="myprgms">
+			<img src="robo.jpg" height="150" width="250">
+			<h3>Robotics</h3>
+			<p style="font-size: 12px">Cyber Physical System</p>
+			<br>
+			<hr style="width: 80%">
+			<a href="robo.html"><button class="prgms-btn">know more</button></a>
+			<hr style="width: 80%">
+		</div>
+	</div></div>
+	<br>
+	<br>
+	<div class="partner">
+		<img src="partner.png">
+		<img src="vtu.png" class="partner pic">
+	</div>
+	<div>
+		<div class="about" id="about">
+		
+		<div class="abt-pic">
+			<img src="sudhi.jpg" height="700" width="400" style="margin: 50px 50px">
+		</div>
+		<div class="abt">
+			<center><h1 style="font-size: 40px">ABOUT</h1></center>
+
+			<p><em>Sudhakar is a Indian technology entrepreneur who has been living in Asia for 20 years, including the last 8 years in the Philippines. His first tech company, in Bangalore and Chennai, reached over 300 employees and raised 80M+ USD from Goldman Sachs and other banks in 2006. Since then, he has started multiple other companies. Arcanys, the current company he founded in Chickballapur, employs 150 people serving Swiss, European and Australian software companies. He is also an active mentor and lecturer with the MassChallenge accelerator in Lausanne, and the administrator of the Arcanys Early Learning Foundation, an NGO with 20 full-time teachers active in Cebu that has helped over 3,000 families teach mathematics to their children.</em></p>
+		</div>
+	</div>
+	</div>
+	<br><br>
+	<div class="contact" id="cont">
+		<div class="con">
+			<p class="con-p1">Organize training
+			at your place</p>
+			<p class="con-p2">You can be our ambassador and organize
+			exciting event at your institution/college</p>
+		</div>
+		<div class="con-details">
+			<form action="mailto:sudhi.lucky1999@gmail.com" method="post" enctype="text/plain">
+				<p><input class="con-det-in" type="text" placeholder="Name" required name="Name"></p>
+				<p><input class="con-det-in" type="phone" placeholder="Mobile Number" required name="Mobile Number"></p>
+				<p><input class="con-det-in" type="mail" placeholder="Email" required name="Email"></p>
+				<p><textarea class="con-det-text" placeholder="Message" required name="Message"></textarea></p>
+				<p><button class="sub-btn" type="submit">Reach Us!</button></p>
+				
+			</form>
+		</div>
+	</div>
+	<div class="location" id="map">
+		<center>
+			<h1>LOCATION</h1>
+			<hr>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5033.384106173731!2d77.72356252104301!3d13.395682408729245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1eff6de1aaaa9%3A0x667b223499fe1e18!2sS.J.C.%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1581692926914!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:2px;" allowfullscreen=""></iframe>
+		</center>
+	</div>
+	<footer>
+		<div class="foot">
+			<ul>
+					
+
+					<li class="footy"><b>STUDENTS</b></li>
+					<br>
+					<li>Bootcamps</li>
+					<li>Courses</li>
+					<li>Hackatons</li>
+					<li>Career Guidance</li>
+				</ul>
+		</div>
+		<div class="foot">
+			<ul>
+					
+
+					<li class="footy"><b>UNIVERSITIES</b></li>
+					<br>
+					<li>New Lab Setup</li>
+					<li>Certification Courses</li>
+					<li>Faculty Development Programs</li>
+					<li>Placement Activities</li>
+				</ul>
+		</div>
+		<div class="foot">
+			<ul>
+					
+					<li class="footy"><b>COMPANIES</b></li>
+					<br>
+					<li>Talent hunt</li>
+					<li>Upskill</li>
+					<li>Reskill</li>
+					<li>Co-Partnering</li>
+					
+				</ul>
+		</div>
+		<div class="foot">
+			<ul>
+					
+					<li class="footy"><b>MENU</b></li>
+					<br>
+					<li>Programs</li>
+					<li>Mission</li>
+					<li>Services</li>
+					<li>Location</li>
+					<li>Conctact</li>
+					
+				</ul>
+		</div>
+		<div class="foot">
+			<ul>
+				<center>
+					<li class="footy"><b>LINKS</b></li>
+					<br>
+					<li><a href="https://www.facebook.com"><img src="fb.png"></a></li>
+					<li><a href="https://twitter.com"><img src="twi.png"></a></li>
+					<li><a href="https://www.linkedin.com/feed/"><img src="linkedin.png"></a></li>
+					<li><a href="https://www.instagram.com"><img src="insta.png"></a></li>
+					<li><a href="https://www.youtube.com"><img src="ytube.png"></a></li>
+				</center>
+					
+					
+					
+				</ul>
+		</div>
+		<div class="foot">
+			<ul>
+				<center>
+					<li class="footy"><b>CONTACT</b></li>
+					<br>
+					<li><img src="phone.png"></li>
+					<li>9916475506</li>
+					<li><img src="mail.png"></li>
+					<li><a href="sudhi.lucky1999@gmail.com" target="_blank" style="color: gray">sudhi.lucky1999@gmail.com</a></li>
+					
+				</center>
+					
+					
+					
+					
+				</ul>
+		</div>
+	</footer>
+	<script>
+
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
